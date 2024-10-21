@@ -1,29 +1,7 @@
-import {Route, BrowserRouter as Router, Routes} from 'react-router-dom'
-import './App.css';
-import Nav from './Component/Navbar';
-import Home from './Component/Home';
+import Layout from "./components/Layout/Layout";
 
 function App() {
-  return (
-    <>
-      
-      <Router>
-
-          <Nav />
-        <Routes>
-          
-            
-            <Route path='/' element={<Home />}/>
-
-            
-
-            
-          
-        </Routes>
-      </Router>
-      
-    </>
-  );
+  return <Layout />;
 }
 
 export default App;
